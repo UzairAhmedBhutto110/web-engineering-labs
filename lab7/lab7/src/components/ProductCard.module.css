@@ -1,0 +1,44 @@
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.title {
+  color: #1e293b;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.price {
+  color: #2563eb;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.status {
+  color: #15803d;
+  margin: 12px 0;
+}
+
+.unavailable {
+  color: #dc2626;
+  margin: 12px 0;
+}
+
+.button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+}

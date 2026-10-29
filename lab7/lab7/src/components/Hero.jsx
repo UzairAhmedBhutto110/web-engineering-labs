@@ -3,23 +3,36 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
 function Hero() {
-  return (
-    <div className="bg-light py-5" id="home">
-      <Container className="text-center py-5">
-        <h1 className="display-4 fw-bold">
-          Build Your Future with SindhTech
-        </h1>
+  const headline = 'Build Your Future with SindhTech';
 
-        <p className="lead mt-3">
-          Discover useful resources, develop new skills, and prepare
-          yourself for exciting opportunities.
+  return (
+    <section className="hero-section" id="home">
+      <Container className="text-center">
+        <span className="hero-badge">LEARN • GROW • SUCCEED</span>
+
+        <h1 className="hero-title mt-4">{headline}</h1>
+
+        <p className="hero-description mt-3">
+          Discover learning resources, prepare for exams, and explore
+          career opportunities to take the next step toward your future.
         </p>
 
-        <Button variant="primary" size="lg" href="#features" className="mt-3">
-          Explore Features
-        </Button>
+        <div className="mt-4">
+          <Button size="lg" variant="primary" href="#features">
+            Explore Features
+          </Button>
+
+          <Button
+            size="lg"
+            variant="outline-dark"
+            href="#about"
+            className="ms-2"
+          >
+            Learn More
+          </Button>
+        </div>
       </Container>
-    </div>
+    </section>
   );
 }
 

@@ -1,0 +1,161 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.hero-section {
+  padding: 110px 0;
+  background: linear-gradient(135deg, #eef5ff, #f8faff, #e8f7f5);
+}
+
+.hero-badge,
+.section-label {
+  color: #0d6efd;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero-title {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #17233b;
+}
+
+.hero-title span {
+  color: #0d6efd;
+}
+
+.hero-description {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #596579;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.features-section {
+  padding: 85px 0;
+  background: #ffffff;
+}
+
+.section-title {
+  color: #17233b;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 750;
+}
+
+.section-description {
+  color: #667085;
+}
+
+.feature-card {
+  border: 1px solid #e5eaf2;
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(20, 40, 80, 0.1);
+}
+
+.feature-icon {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: #edf4ff;
+  font-size: 1.8rem;
+}
+
+.feature-number {
+  margin-bottom: 8px;
+  color: #0d6efd;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.feature-title {
+  color: #17233b;
+  font-weight: 700;
+}
+
+.feature-description {
+  color: #667085;
+  line-height: 1.7;
+}
+
+.site-footer {
+  padding: 45px 0 20px;
+  background: #111827;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-description {
+  max-width: 430px;
+  margin-top: 12px;
+  color: #c2cad6;
+  line-height: 1.7;
+}
+
+.footer-links .nav-link {
+  color: #e0e7f0;
+}
+
+.footer-links .nav-link:hover {
+  color: #ffffff;
+}
+
+.footer-divider {
+  border-color: #485164;
+  margin-top: 30px;
+}
+
+.copyright {
+  margin-bottom: 0;
+  color: #c2cad6;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 75px 0;
+  }
+
+  .hero-section .btn + .btn {
+    margin-top: 12px;
+    margin-left: 0 !important;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+}
